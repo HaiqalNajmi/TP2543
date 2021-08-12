@@ -1,0 +1,114 @@
+<!--
+Matric Number: A174863
+Name: Muhammad Haiqal Najmi bin Zulkarnain
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biodata</title>
+</head>
+<body>
+<h1>Biodata Form</h1>
+<hr>
+<form action="http://lrgs.ftsm.ukm.my/users/a123456/week3lab/validate_biodata.php" method="post" enctype="multipart/form-data">
+  <table border="1" cellpadding="10">
+  <tbody>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" placeholder="Insert your name" autofocus="" required=""></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="0" max="100" step="1" required=""></td>
+    </tr>
+    <tr>
+      <td>Sex:</td>
+      <td><input type="radio" name="sex" value="male" checked="" required="">Male<input type="radio" name="sex" value="female">Female
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required=""></textarea></td>
+    </tr>
+    <!-- complete the rest of form here -->
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" name="email" placeholder="Insert your email address" required="">
+      </td>
+    </tr>
+    <tr>
+      <td>Date of Birth:</td>
+      <td>
+        <input type="date" name="dob" required="">
+      </td>
+    </tr>
+    <tr>
+      <td>Height:</td>
+      <td>
+        <input type="range" name="height" id="heightId" min="100" max="200" value="150" oninput="outputId.value = heightId.value" required="">
+        <output id="outputId" style="margin: 0 0 0 4%;">150</output>cm
+      </td>
+    </tr>
+    <tr>
+      <td>Tel:</td>
+      <td>
+        <input type="tel" name="phone" pattern="^[+]601[0-9]{1}-([0-9]{8}|[0-9]{7})" placeholder="+60##-#######" autofocus="" required="">
+        <span style="margin: 0 9%;"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>My Favourite Color:</td>
+      <td>
+        <input type="color" name="color" required="">
+      </td>
+    </tr>
+    <tr>
+      <td>Facebook/Twitter/IG:</td>
+      <td>
+        <input type="url" name="fbtwig" placeholder="URL for social media" required="">
+      </td>
+    </tr>
+    <tr>
+      <td>My Face Photo:</td>
+      <td>
+        <input type="file" name="photo" required="">
+      </td>
+    </tr>
+    <tr>
+      <td>My University:</td>
+      <td>
+        <select name="university" size="6" required="">
+          <option value="" selected="">Select</option>
+          <option value="UM">Universiti Malaya</option>
+          <option value="USM">Universiti Sains Malaysia</option>
+          <option value="UKM">Universiti Kebangsaan Malaysia</option>
+          <option value="UPM">Universiti Putra Malaysia</option>
+          <option value="UTM">Universiti Teknologi Malaysia</option>
+          <option value="UIAM">Universiti Islam Antarabangsa Malaysia</option>
+          <option value="UUM">Universiti Utara Malaysia</option>
+          <option value="UNIMAS">Universiti Malaysia Sarawak</option>
+          <option value="UMS">Universiti Malaysia Sabah</option>
+          <option value="UPSI">Universiti Pendidikan Sultan Idris</option>
+          <option value="USIM">Universiti Sains Islam Malaysia</option>
+          <option value="UiTM">Universiti Teknologi MARA</option>
+          <option value="UMT">Universiti Malaysia Terengganu</option>
+          <option value="UTHM">Universiti Tun Hussein Onn</option>
+          <option value="UTeM">Universiti Teknikal Malaysia Melaka</option>
+          <option value="UMP">Universiti Malaysia Pahang</option>
+          <option value="UniMAP">Universiti Malaysia Perlis</option>
+          <option value="UniSZA">Universiti Sultan Zainal Abidin</option>
+          <option value="UMK">Universiti Malaysia Kelantan</option>
+          <option value="UPNM">Universiti Pertahanan Nasional Malaysia</option>
+        </select>
+      </td>
+    </tr>
+  </tbody>
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="a174863">
+<input type="submit" name="biodata_form" value="Submit My Biodata">
+<input type="reset">
+</form>
+</body>
+</html>

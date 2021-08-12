@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TP2543 Web Programming Deliverables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link href="border.css" rel="stylesheet">
+  <link href="glow.css" rel="stylesheet">
+  <link href="neon.css" rel="stylesheet">
+  <link href="text.css" rel="stylesheet">
+  <link href="card.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 35px;}
+  .container-fluid {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  </style>
+  <style>
+  .button {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: relative;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+
+  .button:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .button:focus { outline:0; }
+</style>
+<style>
+  .image-wrapper {
+   width: 400px;
+   height: 250px;
+   position: relative;
+   top: -150px;
+   margin: 30vh auto;
+}
+ .image-wrapper img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform-origin: left;
+}
+ .image-1 {
+   clip-path: polygon(0 0, 0 32%, 28% 0);
+   transform: translate(-10px, -10px);
+   transition: transform 300ms ease;
+   transform-origin: top;
+}
+ .image-wrapper:hover .image-1 {
+   transform: translate(0, 0);
+}
+ .image-2 {
+   clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+   transform: translate(-30px, 5px);
+   transition: transform 300ms ease;
+}
+ .image-wrapper:hover .image-2 {
+   transform: translate(0, 0);
+}
+ .image-3 {
+   clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+   transform: translate(-15px, -10px);
+   transition: transform 300ms ease;
+}
+ .image-wrapper:hover .image-3 {
+   transform: translate(0, 0);
+}
+ .image-4 {
+   clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+   transform: translate(-32px, 5px);
+   transition: transform 300ms ease;
+   transform-origin: top;
+}
+ .image-wrapper:hover .image-4 {
+   transform: translate(0, 0);
+}
+</style>
+</head>
+<body>
+  
+<!-- header -->
+<div class="container-fluid bg-success text-center" style="background: linear-gradient(to bottom, #660066 0%, #660066 100%);">
+  <div class="neon" style="padding: 10px;">TP2543 Web Programming Deliverables</div>
+  <!-- <h2 class="margin">TP2543 Web Programming Deliverables</h2> -->
+  <!-- <img src="MHN1.jpg" width="20%" height="10%" class="img-responsive img-circle margin" style="display:inline"> -->
+  <div class="image-wrapper">
+    <img class="image-1" src="image/MHN1.jpg"  style="display:block; margin-left: auto; margin-right: auto; width: 100%;">
+    <img class="image-2" src="image/MHN1.jpg"  style="display:block; margin-left: auto; margin-right: auto; width: 100%;">
+    <img class="image-3" src="image/MHN1.jpg"  style="display:block; margin-left: auto; margin-right: auto; width: 100%;">
+    <img class="image-4" src="image/MHN1.jpg"  style="display:block; margin-left: auto; margin-right: auto; width: 100%;">
+  </div>
+  <!-- <div class="flux" style="padding: 20px;">A174863 - Muhammad Haiqal Najmi bin Zulkarnain</div> -->
+  <h3 style="color: #FFF;"><b>A174863 - Muhammad Haiqal Najmi bin Zulkarnain</b></h3>
+</div>
+<div style="background-color: DarkSlateGrey;">
+  <div class="text-box">
+    <section class="text-center">
+      <h2 style="color: #ffffff">
+        <strong>Welcome to My Page</strong>
+      </h2>
+    </section>
+  </div>
+</div>
+<!-- Lab -->
+<div class="container-fluid text-center" style="background: linear-gradient(to bottom, #ff5050 0%, #ff6666 100%);">
+  <h2 class="margin"><b>Laboratory</b></h2>
+    
+    <div class="row">
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week2Lab: Basic HTML</b></h3>
+            <img src="image/html5.png" alt="html logo" height="100px" width="100px">
+            <p>To create a HTML page about myself</p>
+            <p><a href="week2lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week3Lab: HTML Form</b></h3>
+            <img src="image/html5.png" alt="html logo" height="100px" width="100px">
+            <p>To create Biodata, Login and Search Form</p>
+            <p><a href="week3lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week4Lab: Basic PHP</b></h3>
+            <img src="image/php.png" alt="php logo" height="100px" width="100px">
+            <p>To validate basic PHP</p>
+            <p><a href="week4lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- row -->
+  
+    <div class="row">
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow" style="padding: 3px;">
+          <div class="caption">
+            <h3><b>Week5Lab: PHP & MySQL</b></h3>
+            <img src="image/phpmysql.png" alt="php-mysql logo" height="100px" width="100px">
+            <p>To execute sql statements</p>
+            <p><a href="week5lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow" style="padding: 3px;">
+          <div class="caption">
+            <h3><b>Week6Lab: Adv PHP & Session</b></h3>
+            <img src="image/php.png" alt="php logo" height="100px" width="100px">
+            <p>To implement image uploading</p>
+            <p><a href="week6lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div><div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow" style="padding: 3px;">
+          <div class="caption">
+            <h3><b>Week7Lab: Codeigniter Framework</b></h3>
+            <img src="image/codeigniter.png" alt="codeigniter logo" height="100px" width="100px">
+            <p>To develop the MVC design pattern</p>
+            <p><a href="week7lab/myguestbook" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- row -->
+ 
+    <div class="row">
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week9Lab: CSS</b></h3>
+            <img src="image/css.jpg" alt="css logo" height="100px" width="100px">
+            <p>To apply different style of CSS</p>
+            <p><a href="week9lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week10Lab: Bootstrap</b></h3>
+            <img src="image/bootstrap.png" alt="bootstrap logo" height="100px" width="100px">
+            <p>To apply CSS framework using Bootstrap</p>
+            <p><a href="week10lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week11Lab: JavaScript</b></h3>
+            <img src="image/javascript.png" alt="javascript logo" height="100px" width="100px">
+            <p>To implement JavaScript</p>
+            <p><a href="week11lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- row -->
+ 
+    <div class="row">
+      <div class="col-sm-6" style="padding-bottom: 40px;">
+        <div class="rainbow">
+          <div class="caption">
+            <h3><b>Week13Lab: JQuery</b></h3>
+            <img src="image/jquery.png" alt="jquery logo" height="100px" width="100px">
+            <p>To implement JQuery</p> 
+            <p><a href="week12lab/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3><b>Week14Lab: Ajax</b></h3>
+            <img src="image/ajax.png" alt="ajax logo" height="100px" width="100px">
+            <p>Describe the assignment here.</p>
+            <p><a href="#" class="btn btn-primary">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+          </div>
+        </div>
+      </div> -->
+    </div><!-- row -->
+</div>
+  
+<!-- Assignment -->
+<div class="container-fluid bg-warning text-center" style="background: linear-gradient(to bottom, #6666ff 0%, #9933ff 100%);">
+  <h2 class="margin"><b>Assignment</b></h2>
+    
+  <!-- Assignment#1 -->
+  <div class="container">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <i class="fab fa-windows"></i>            
+          <h3>Assignment #1</h3>
+        </div>
+      </div>
+      <div class="face face2">
+       <div class="content">
+         <p> Enhanced Biodata Form</p>
+         <a href="assignment1/a174863.html" type="button">Click Here</a>
+       </div>
+      </div>
+   </div>
+
+   <!-- Assignment#2 -->
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <i class="fab fa-apple"></i>            
+        <h3>Assignment #2</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p> Enhanced Guestbook System</p>
+        <a href="assignment2/index.php" type="button">Click Here</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h3><b>Assignment #1</b></h3>
+        <p>Enhanced Biodata Form</p>
+        <a href="assignment1/a174863.html" class="btn button">
+          <span class="glyphicon glyphicon-zoom-in"></span> View
+        </a>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h3><b>Assignment #2</b></h3>
+        <p>Enhanced Guestbook System</p>
+        <a href="assignment2/index.php" class="btn button">
+          <span class="glyphicon glyphicon-zoom-in"></span> View
+        </a>
+      </div>
+    </div>
+</div> -->
+  
+<!-- Project -->
+<div class="container-fluid text-center" style="background: linear-gradient(to bottom, #003366 0%, #003366 100%);">  
+  <h2 class="margin" style="color: #FFF;"><b>Project</b></h2>
+  <p class="margin" style="color: #FFF;">My project is to develop a web-based back office system for a company that sells pet fish, foods and aquarium supplies.</p>
+  <div class="row">
+   <div class="col-sm-3">
+    <div class="container2">
+      <div class="card">
+        <div class="imgBx">
+          <img src="myPT4/FishLogo.png">
+        </div>
+        <div class="contentBx">
+          <br>
+          <h3>Project Task #1 - HTML</h3>
+          <br>
+          <a href="myPT1/" class="btn button">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="container2">
+     <div class="card">
+      <div class="imgBx">
+        <img src="myPT4/FishLogo.png">
+      </div>
+      <div class="contentBx">
+        <br>
+        <h3>Project Task #2 - PHP & Database</h3>
+        <br>
+        <a href="myPT2/" class="btn button">
+          <span class="glyphicon glyphicon-zoom-in"></span> Open
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3">
+  <div class="container2">
+   <div class="card">
+    <div class="imgBx">
+      <img src="myPT4/FishLogo.png">
+    </div>
+    <div class="contentBx">
+      <br>
+      <h3>Project Task #3 - JavaScript & Bootstrap</h3>
+      <br>
+      <a href="myPT3/" class="btn button">
+        <span class="glyphicon glyphicon-zoom-in"></span> Open
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+  <div class="container2">
+   <div class="card">
+    <div class="imgBx">
+      <img src="myPT4/FishLogo.png">
+    </div>
+    <div class="contentBx">
+      <br>
+      <h3>Project Task - Final</h3>
+      <br>
+      <a href="myPT4/" class="btn button">
+        <span class="glyphicon glyphicon-zoom-in"></span> Open
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+  
+<!-- Footer -->
+<footer class="container-fluid bg-primary text-center" style="background: linear-gradient(to bottom, #006666 0%, #009999 100%);">
+  <p>Copyright Najmi 2021 - A174863 Faculty of Information Science & Technology</p>
+</footer>
+
+</body>
+</html>
